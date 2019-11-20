@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load staticfiles common_filters cache_filters i18n %}
+
+{% block title %}404 Page not found | sample{% endblock title %}
+
+{% block extra_css %}
+    <link href="{% static 'css/404.css' %}" rel="stylesheet" type="text/css" media="screen"/>
+{% endblock extra_css %}
+
+{% block wrap %}
+    {% cache CACHE_TIMEOUT 404 flavour %}
+    <div id="errorContent">
+        <div class="inner">
+            <h1>お探しのページは見つかりませんでした</h1>
+            <p>
+                <span>アドレス（URL）を入力ミスしている可能性があります。</span>
+                <span>お手数ですが、アドレスが正しく入力されているかご確認の上、再読み込みしてください。</span>
+            </p>
+            <a class="btnHome" href="/">TOP PAGE</a>
+        </div>
+    </div>
+    {% endcache %}
+{% endblock wrap %}

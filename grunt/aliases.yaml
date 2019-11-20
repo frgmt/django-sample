@@ -1,0 +1,69 @@
+# grunt task
+
+# Tasks(rsync, less, etc) are executed from top to bottom.
+
+# for https
+default:
+  - 'bower:development'
+  - 'rsync:production'
+  - 'less:staging'
+  - 'typescript:staging'
+  - 'ngconstant:development'
+  - 'exec:reload'
+  - 'watch'
+
+# for http
+# ngconstant is the only difference compared to above env(default)
+dev_http:
+  - 'bower:development'
+  - 'rsync:production'
+  - 'less:staging'
+  - 'typescript:staging'
+  - 'ngconstant:development_http'
+  - 'exec:reload'
+  - 'watch'
+
+# faster version of dev_http without karma tests.
+dev_http_without_tests:
+  - 'bower:development'
+  - 'rsync:production'
+  - 'less:staging'
+#  - 'typescript:staging'
+  - 'ngconstant:development_http'
+  - 'exec:reload'
+  - 'watch'
+
+# clean build
+dev_clean:
+  - 'exec:clean_static'
+  - 'bower:development'
+  - 'exec:collectstatic_local'
+  - 'rsync:production'
+  - 'less:staging'
+  - 'typescript:staging'
+  - 'ngconstant:development_http'
+
+dev:
+  - 'bower:development'
+  - 'rsync:production'
+  - 'less:staging'
+  - 'typescript:staging'
+  - 'ngconstant:development'
+
+staging:
+  - 'bower:production'
+  - 'rsync:production'
+  - 'less:production'
+  - 'typescript:production'
+  - 'ngconstant:staging'
+  - 'uglify'
+  - 'cssmin'
+
+deploy:
+  - 'bower:production'
+  - 'rsync:production'
+  - 'less:production'
+  - 'typescript:production'
+  - 'ngconstant:production'
+  - 'uglify'
+  - 'cssmin'

@@ -1,0 +1,100 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "jgrowl": "~1.3.0",
+    "bootstrap": "^3.4",
+    "chart.js": "^1.0",
+    "ckeditor": "^4.7",
+    "bootstrap-colorpicker": "^2.5.1",
+    "datatables.net": "^1.10.15",
+    "datatables.net-bs": "^2.1.1",
+    "bootstrap-datepicker": "^1.7",
+    "bootstrap-daterangepicker": "^2.1.25",
+    "moment": "^2.18.1",
+    "fastclick": "^1.0.6",
+    "Flot": "flot#^0.8.3",
+    "fullcalendar": "^3.4",
+    "inputmask": "jquery.inputmask#^3.3.7",
+    "ion.rangeSlider": "ionrangeslider#^2.2",
+    "jvectormap": "^1.2.2",
+    "jquery-knob": "^1.2.13",
+    "morris.js": "^0.5.1",
+    "PACE": "pace#^1.0.2",
+    "select2": "^4.0.7",
+    "jquery-slimscroll": "slimscroll#^1.3.8",
+    "jquery-sparkline": "^2.1.3",
+    "font-awesome": "^4.7",
+    "Ionicons": "ionicons#^2.0.1",
+    "jquery-ui": "^1.12.1",
+    "seiyria-bootstrap-slider": "^10.6.2"
+  },
+  "resolutions": {
+    "jquery": "^3.4.1"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "css": "dist/css/*.css",
+      "fonts": "dist/fonts/*",
+      "js": "dist/js/*.js"
+    },
+    "bootstrap-colorpicker": {
+      "css": "dist/css/*.css",
+      "img": "dist/img/*",
+      "js": "dist/js/*.js"
+    },
+    "bootstrap-datepicker": {
+      "css": "dist/css/*.css",
+      "locales": "dist/locales/*",
+      "js": "dist/js/*.js"
+    },
+    "bootstrap-daterangepicker": {
+      "css": "daterangepicker.css",
+      "js": "daterangepicker.js"
+    },
+    "chart.js": {
+      "js": "Chart.js"
+    },
+    "fastclick": {
+      "js": "lib/fastclick.js"
+    },
+    "font-awesome": {
+      "css": "css/font-awesome.css",
+      "fonts": "fonts/*"
+    },
+    "Ionicons": {
+      "css": "css/ionicons.css",
+      "fonts": "fonts/*"
+    },
+    "jgrowl": {
+      "js": "*.jgrowl*.js",
+      "map": "*.map",
+      "css": "*.css"
+    },
+    "jquery": {
+      "js": "dist/*.js",
+      "map": "dist/*.map"
+    },
+    "jquery-knob": {
+      "js": "dist/*.js"
+    },
+    "jquery-slimscroll": {
+      "js": "*.js"
+    },
+    "jvectormap": {
+      "css": "jquery-jvectormap.css",
+      "js": [
+        "jquery-jvectormap.js",
+        "jquery-mousewheel.js"
+      ]
+    },
+    "moment": {
+      "js": "min/moment-with-locales.min.js"
+    },
+    "morris.js": {
+      "css": "morris.css",
+      "js": "morris.js"
+    }
+  }
+}

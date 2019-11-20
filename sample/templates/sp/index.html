@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load pagination_tags staticfiles cache_filters common_filters i18n %}
+
+{% block title %}{{ title }}{% endblock title %}
+
+{% block rss_feed %}
+    <link rel="alternate" type="application/rss+xml" title="sample" href="{% url 'feeds' %}" />
+{% endblock rss_feed %}
+
+{% block extra_css %}
+    <link href="{% static "css/sp/home.css" %}" rel="stylesheet" type="text/css" media="screen" />
+{% endblock extra_css %}
+
+{% block extra_js %}
+    <script type="text/javascript" charset="utf-8" src="{% static "js/sp/index.js" %}"></script>
+{% endblock extra_js %}
+
+{% block wrap %}
+    <div id="mainWrap">
+        <div id="main">
+        </div>
+    </div>
+{% endblock wrap %}

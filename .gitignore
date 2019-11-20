@@ -1,0 +1,53 @@
+# -*- mode: gitignore; -*-
+
+.idea
+*.pyc
+*.lock
+*.js.map
+sample/media
+sample/assets/css/**/*.css
+sample/assets/vendor/*
+sample/static/**/*
+sample/sample/settings/*_credential.py
+
+# node env
+node_modules
+
+# js
+.bower-cache
+.bower-registry
+
+# exception
+!.gitkeep
+
+### https://raw.github.com/github/gitignore/master/Global/vim.gitignore
+
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+
+### https://raw.github.com/github/gitignore/master/Global/OSX.gitignore
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
