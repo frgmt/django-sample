@@ -7,7 +7,7 @@ pyproj              ==1.9.5.1
 django-appconf      ==1.0.2
 py-bcrypt           ==0.4
 Pillow              ==4.2.1
-httplib2            ==0.9.1
+httplib2            ==0.18.0
 beautifulsoup4      ==4.6.0
 cchardet            ==2.1.1
 # linaro-django-pagination official repository does not support Django 2.0.
