@@ -1,4 +1,4 @@
-Django              ==2.0.2
+Django              ==2.2.13
 # django-mobile official repository only supports up to Django 1.9
 git+git://github.com/frgmt/django-mobile#egg=django-mobile
 
